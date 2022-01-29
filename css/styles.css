@@ -189,6 +189,21 @@ margin-bottom: 20px;
     letter-spacing: 0.06em;
     text-transform: uppercase; 
   }
+  .overlay{
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    }
   
  /* Особености */
  .section-exception{
@@ -206,6 +221,37 @@ margin-bottom: 20px;
   .list-item:last-child {
     margin-right: 0;
   }
+  .list-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:var(--filter-bg-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  .icon-anten::before {
+    background-image: url(../images/antenna\ 1.svg);
+    background-size: 70px;
+    
+  }
+  .icon-clock::before {
+    background-image: url(../images/clock\ 1.svg);
+    background-size: 70px;
+  }
+  .icon-diagram::before {
+    background-image: url(../images/diagram\ 1.svg);
+    background-size: 70px;
+  }
+  .icon-astro::before {
+    background-image: url(../images/astronaut\ 1.svg);
+    background-size: 70px;
+  } 
+
+
+
   .section-title {
     color:var(--primary-text-color);
     font-weight: 700;
@@ -247,6 +293,7 @@ margin-bottom: 20px;
     margin-right: 0; 
   }
   /*  Наша команда */
+  
   .feature-team {
     background-color: var(--filter-bg-color);
   }
@@ -294,7 +341,31 @@ margin-bottom: 20px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 16px ;
    }
+   .name-occupation{
+     display: flex;
+     justify-content: center;
+   }
+   .name-occupation-link {
+     width: 44px;
+     height: 44px;
+     background-color: rgb(85, 20, 20);
+     border-radius: 50%;
+     display: block;
+   }
+   .name-occupation-item+.name-occupation-item {
+     margin-left: 10px;
+   }
+
+
+  /* Постоянные клиенты */
+  .section-clients {
+    background-color:var(--top-line-bg);
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   /* Footer */
   .page-footer {
     background-color:var(--footer-bg-color) ;
